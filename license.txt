@@ -1,0 +1,43 @@
+oracle 11g 管理口令 8686Ak47
+
+
+SVN 集中式的版本控制系统  --速度慢，必须联网才能使用
+GIT 分布式的版本控制系统
+
+
+git 指令
+  设置属性
+	设置名字   git config --global user.name ""
+	设置邮箱   gir config --global user.email ""
+
+  创建git仓库
+	mkdir gitname
+	cd gitname
+	
+	pwd 	查看当前地址
+	git init  把当前目录变成Git管理仓库
+
+  git中提交文件
+	git add readme.txt     把文件添加到仓库中
+	git commit -m "worte a readme fiel"    把文件提交到仓库  -m 后面跟的是注释
+
+
+  检查版本和内容
+	git status	获取当前git仓库状态
+	git diff	查看具体修改内容
+
+  提交日志
+	git log 查看所有提交日志
+	git log --pretty=oneline  查看简洁日志
+
+
+  版本回退
+	git reset --hard HEAD^  HEAD表示当前版本，HEAD^表示上个版本，HEAD^100表示往上100个版本 reset版本回退
+
+  查看文件内容
+	cat readme.txt 
+
+  指定回到某个版本
+	 git reset --hard 版本号	版本号可以不写全，写前几位，有区别即可
+
+	 git reflog  记录每一次命令
